@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Careers at MTANDA — Join Uganda's Leading Distribution Team</title>
+  <meta name="description" content="Explore career opportunities at MTANDA. We are always looking for talented professionals in sales, logistics, finance, and technology across Uganda."/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://mtanda.co.ug/careers"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/pages.css"/>
+  <style>
+    .job-card {
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-xl);
+      padding: var(--space-6);
+      transition: all var(--transition-base);
+      display: flex;
+      flex-direction: column;
+    }
+    [data-theme="dark"] .job-card { background: var(--bg-secondary); border-color: rgba(255,255,255,0.06); }
+    .job-card:hover { border-color: var(--primary); transform: translateX(5px); box-shadow: var(--shadow-md); }
+    .job-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: var(--space-3); gap: var(--space-4); }
+    .job-title { font-family: var(--font-display); font-weight: 700; font-size: var(--text-lg); color: var(--text-primary); margin-bottom: 4px; }
+    .job-dept { font-size: var(--text-xs); color: var(--primary); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
+    .job-type-badge { padding: 4px 10px; background: var(--bg-secondary); border-radius: var(--radius-full); font-size: 11px; font-weight: 600; color: var(--text-secondary); white-space: nowrap; }
+    [data-theme="dark"] .job-type-badge { background: var(--bg-tertiary); }
+    .job-meta { display: flex; gap: var(--space-4); font-size: var(--text-sm); color: var(--text-muted); margin-bottom: var(--space-5); flex-wrap: wrap; }
+    .job-meta-item { display: flex; align-items: center; gap: 6px; }
+    .job-footer { margin-top: auto; padding-top: var(--space-4); border-top: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center; }
+  </style>
+</head>
+<body>
+<header>
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="MTANDA Home">
+        <div class="nav-logo-mark">M</div>
+        <div><span class="nav-logo-text">MTANDA</span><span class="nav-logo-sub">Ceres Holdings Limited</span></div>
+      </a>
+      <ul class="nav-menu" role="list">
+        <li><a href="index.html" class="nav-link" data-page="index.html">Home</a></li>
+        <li><a href="about.html" class="nav-link" data-page="about.html">About</a></li>
+        <li><a href="services.html" class="nav-link" data-page="services.html">Services</a></li>
+        <li><a href="industries.html" class="nav-link" data-page="industries.html">Industries</a></li>
+        <li><a href="coverage.html" class="nav-link" data-page="coverage.html">Coverage</a></li>
+        <li><a href="partners.html" class="nav-link" data-page="partners.html">Partners</a></li>
+        <li><a href="blog.html" class="nav-link" data-page="blog.html">Insights</a></li>
+        <li><a href="careers.html" class="nav-link page-active" data-page="careers.html">Careers</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode"><span data-theme-icon><i class="fa-solid fa-moon"></i></span></button>
+        <a href="contact.html" class="btn btn-primary btn-sm">Partner With Us <i class="fa-solid fa-arrow-right"></i></a>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open menu" aria-expanded="false">
+          <span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+</header>
+<div id="mobile-menu">
+  <a href="index.html" class="mobile-nav-link">Home</a>
+  <a href="about.html" class="mobile-nav-link">About MTANDA</a>
+  <a href="services.html" class="mobile-nav-link">Our Services</a>
+  <a href="industries.html" class="mobile-nav-link">Industries</a>
+  <a href="coverage.html" class="mobile-nav-link">Coverage</a>
+  <a href="partners.html" class="mobile-nav-link">Partners</a>
+  <a href="blog.html" class="mobile-nav-link">Insights</a>
+  <a href="careers.html" class="mobile-nav-link">Careers</a>
+  <a href="contact.html" class="mobile-nav-link">Contact</a>
+</div>
+<div id="scroll-progress" aria-hidden="true"></div>
+
+<main>
+<section class="page-hero">
+  <div class="page-hero-blob" style="width:500px;height:500px;background:radial-gradient(circle,rgba(124,58,237,0.2) 0%,transparent 70%);top:-100px;left:-100px;"></div>
+  <div class="container page-hero-inner">
+    <div class="page-hero-tag" data-aos="fade-up"><i class="fa-solid fa-user-group"></i> Careers at MTANDA</div>
+    <h1 class="display-lg" data-aos="fade-up" data-aos-delay="80">Build the Future of<br><span style="color:var(--primary);">East African Trade</span></h1>
+    <p data-aos="fade-up" data-aos-delay="160">Join a team of 500+ ambitious professionals transforming how products reach consumers across Uganda. We are always looking for talent in sales, logistics, technology, and operations.</p>
+    <div class="page-hero-breadcrumb" data-aos="fade-up" data-aos-delay="220"><a href="index.html">Home</a><span>/</span><span style="color:rgba(255,255,255,0.7);">Careers</span></div>
+  </div>
+</section>
+
+<!-- ── WHY WORK WITH US ── -->
+<section class="content-section">
+  <div class="container">
+    <div class="section-header" style="text-align:center;">
+      <h2 class="display-sm">Why Join <span class="text-gradient">MTANDA?</span></h2>
+      <p style="max-width:600px;margin:0 auto;">We don't just offer jobs; we build careers. MTANDA is an environment that rewards performance, encourages innovation, and invests in continuous learning.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:var(--space-6);margin-top:var(--space-8);">
+      <div class="benefit-card" data-aos="fade-up">
+        <div class="benefit-icon"><i class="fa-solid fa-chart-line"></i></div>
+        <div class="benefit-title">Rapid Growth Trajectory</div>
+        <div class="benefit-desc">We are expanding fast. With 8 regional hubs and new country operations launching, high performers move up quickly.</div>
+      </div>
+      <div class="benefit-card" data-aos="fade-up" data-aos-delay="60">
+        <div class="benefit-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+        <div class="benefit-title">Continuous Training</div>
+        <div class="benefit-desc">Our MTANDA Academy provides ongoing training in sales methodologies, supply chain management, and leadership.</div>
+      </div>
+      <div class="benefit-card" data-aos="fade-up" data-aos-delay="120">
+        <div class="benefit-icon"><i class="fa-solid fa-hospital"></i></div>
+        <div class="benefit-title">Comprehensive Benefits</div>
+        <div class="benefit-desc">Competitive salaries, performance bonuses, health insurance for you and your dependents, and travel allowances.</div>
+      </div>
+      <div class="benefit-card" data-aos="fade-up" data-aos-delay="180">
+        <div class="benefit-icon"><i class="fa-solid fa-laptop"></i></div>
+        <div class="benefit-title">Tech-Forward Culture</div>
+        <div class="benefit-desc">Work with state-of-the-art logistics and SFA platforms. We embrace technology to make your job more efficient.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── OPEN ROLES ── -->
+<section class="content-section content-section-alt" id="open-roles">
+  <div class="container">
+    <div class="section-header" style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:var(--space-4);">
+      <div>
+        <h2 class="display-sm">Open <span class="text-gradient">Positions</span></h2>
+        <p>Explore our current openings across Uganda.</p>
+      </div>
+      <div class="filter-chips" style="margin-bottom:0;">
+        <div class="filter-chip active" data-filter="all">All Departments</div>
+        <div class="filter-chip" data-filter="sales">Sales & Commercial</div>
+        <div class="filter-chip" data-filter="logistics">Logistics</div>
+        <div class="filter-chip" data-filter="tech">Technology</div>
+      </div>
+    </div>
+    
+    <div style="display:flex;flex-direction:column;gap:var(--space-4);margin-top:var(--space-8);">
+      
+      <!-- Job 1 -->
+      <div class="job-card" data-category="sales">
+        <div class="job-header">
+          <div>
+            <div class="job-dept">Sales & Commercial</div>
+            <div class="job-title">Territory Sales Manager</div>
+          </div>
+          <div class="job-type-badge">Full-time</div>
+        </div>
+        <div class="job-meta">
+          <div class="job-meta-item"><i class="fa-solid fa-location-dot"></i> Gulu Hub</div>
+          <div class="job-meta-item"><i class="fa-solid fa-briefcase"></i> 3-5 Years Exp.</div>
+        </div>
+        <p style="font-size:var(--text-sm);color:var(--text-secondary);line-height:1.6;margin-bottom:var(--space-4);">Lead a team of 15 field reps across the Acholi sub-region. Responsible for FMCG portfolio sell-through, route optimization, and distributor partner management.</p>
+        <div class="job-footer">
+          <a href="#apply" class="btn btn-primary btn-sm" onclick="document.getElementById('job-role').value='Territory Sales Manager - Gulu';">Apply Now</a>
+          <span style="font-size:11px;color:var(--text-muted);">Posted 2 days ago</span>
+        </div>
+      </div>
+
+      <!-- Job 2 -->
+      <div class="job-card" data-category="logistics">
+        <div class="job-header">
+          <div>
+            <div class="job-dept">Logistics & Supply Chain</div>
+            <div class="job-title">Warehouse Supervisor</div>
+          </div>
+          <div class="job-type-badge">Full-time</div>
+        </div>
+        <div class="job-meta">
+          <div class="job-meta-item"><i class="fa-solid fa-location-dot"></i> Kampala (HQ)</div>
+          <div class="job-meta-item"><i class="fa-solid fa-briefcase"></i> 2+ Years Exp.</div>
+        </div>
+        <p style="font-size:var(--text-sm);color:var(--text-secondary);line-height:1.6;margin-bottom:var(--space-4);">Manage daily inbound/outbound operations at our primary 40,000 sq ft facility. Requires experience with WMS software and managing teams of 20+ warehouse staff.</p>
+        <div class="job-footer">
+          <a href="#apply" class="btn btn-primary btn-sm" onclick="document.getElementById('job-role').value='Warehouse Supervisor - Kampala';">Apply Now</a>
+          <span style="font-size:11px;color:var(--text-muted);">Posted 5 days ago</span>
+        </div>
+      </div>
+
+      <!-- Job 3 -->
+      <div class="job-card" data-category="tech">
+        <div class="job-header">
+          <div>
+            <div class="job-dept">Technology</div>
+            <div class="job-title">Data Analyst (Supply Chain)</div>
+          </div>
+          <div class="job-type-badge">Full-time</div>
+        </div>
+        <div class="job-meta">
+          <div class="job-meta-item"><i class="fa-solid fa-location-dot"></i> Kampala (HQ) / Hybrid</div>
+          <div class="job-meta-item"><i class="fa-solid fa-briefcase"></i> 2+ Years Exp.</div>
+        </div>
+        <p style="font-size:var(--text-sm);color:var(--text-secondary);line-height:1.6;margin-bottom:var(--space-4);">Analyze route efficiency, fleet fuel consumption, and territory sales data to build predictive models for demand forecasting. Proficiency in SQL and PowerBI required.</p>
+        <div class="job-footer">
+          <a href="#apply" class="btn btn-primary btn-sm" onclick="document.getElementById('job-role').value='Data Analyst - Kampala';">Apply Now</a>
+          <span style="font-size:11px;color:var(--text-muted);">Posted 1 week ago</span>
+        </div>
+      </div>
+      
+      <!-- Job 4 -->
+      <div class="job-card" data-category="sales">
+        <div class="job-header">
+          <div>
+            <div class="job-dept">Sales & Commercial</div>
+            <div class="job-title">Field Sales Representatives (Multiple)</div>
+          </div>
+          <div class="job-type-badge">Contract</div>
+        </div>
+        <div class="job-meta">
+          <div class="job-meta-item"><i class="fa-solid fa-location-dot"></i> Mbarara, Mbale, Arua</div>
+          <div class="job-meta-item"><i class="fa-solid fa-briefcase"></i> Entry Level</div>
+        </div>
+        <p style="font-size:var(--text-sm);color:var(--text-secondary);line-height:1.6;margin-bottom:var(--space-4);">Frontline sales roles handling daily retail store visits, order capture via mobile SFA, and merchandising. Motorcycle riding skill and valid permit is mandatory.</p>
+        <div class="job-footer">
+          <a href="#apply" class="btn btn-primary btn-sm" onclick="document.getElementById('job-role').value='Field Sales Rep - Various';">Apply Now</a>
+          <span style="font-size:11px;color:var(--text-muted);">Ongoing Recruitment</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── APPLICATION FORM ── -->
+<section class="content-section" id="apply">
+  <div class="container">
+    <div style="max-width:700px;margin:0 auto;background:var(--bg-secondary);border:1px solid var(--border-color);border-radius:var(--radius-xl);padding:clamp(2rem,5vw,4rem);">
+      <h2 style="font-family:var(--font-display);font-size:var(--text-2xl);font-weight:700;margin-bottom:var(--space-2);text-align:center;">Submit Application</h2>
+      <p style="color:var(--text-secondary);font-size:var(--text-sm);text-align:center;margin-bottom:var(--space-6);">Can't find a role that fits? Submit a general application and we'll keep your CV on file.</p>
+      
+      <form id="full-careers-form">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-4);margin-bottom:var(--space-4);">
+          <div class="form-group">
+            <label class="form-label" for="c-fname">First Name</label>
+            <input type="text" id="c-fname" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="c-lname">Last Name</label>
+            <input type="text" id="c-lname" class="form-control" required>
+          </div>
+        </div>
+        <div class="form-group" style="margin-bottom:var(--space-4);">
+          <label class="form-label" for="c-email">Email Address</label>
+          <input type="email" id="c-email" class="form-control" required>
+        </div>
+        <div class="form-group" style="margin-bottom:var(--space-4);">
+          <label class="form-label" for="job-role">Position Applying For</label>
+          <input type="text" id="job-role" class="form-control" placeholder="e.g. Territory Sales Manager (Leave blank for general)" required>
+        </div>
+        <div class="form-group" style="margin-bottom:var(--space-4);">
+          <label class="form-label" for="c-cv">LinkedIn Profile URL</label>
+          <input type="url" id="c-cv" class="form-control" placeholder="https://linkedin.com/in/...">
+        </div>
+        <div class="form-group" style="margin-bottom:var(--space-6);">
+          <label class="form-label" for="c-cover">Cover Letter / Note</label>
+          <textarea id="c-cover" class="form-control" rows="4" placeholder="Tell us why you want to join MTANDA..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary w-full" style="justify-content:center;padding:1rem;">Submit Application</button>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer id="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="img/Mtanda.png" alt="MTANDA Logo" style="max-height: 180px; margin-bottom: 1rem;" />
+        <p>Building markets, moving products and growing brands across Uganda and East Africa.</p>
+        <div class="footer-social">
+          <a href="#" class="footer-social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" class="footer-social-link" aria-label="Twitter/X"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="footer-social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+      </div>
+      <nav aria-label="Company links"><div class="footer-col"><h4>Company</h4><ul class="footer-links">
+        <li><a href="about.html" class="footer-link">About MTANDA</a></li>
+        <li><a href="blog.html" class="footer-link">News & Insights</a></li>
+        <li><a href="careers.html" class="footer-link">Careers</a></li>
+        <li><a href="contact.html" class="footer-link">Contact</a></li>
+      </ul></div></nav>
+      <nav aria-label="Services links"><div class="footer-col"><h4>Services</h4><ul class="footer-links">
+        <li><a href="services.html" class="footer-link">Trade Distribution</a></li>
+        <li><a href="services.html" class="footer-link">Market Development</a></li>
+        <li><a href="services.html" class="footer-link">Logistics</a></li>
+      </ul></div></nav>
+      <nav aria-label="Other links"><div class="footer-col"><h4>Explore</h4><ul class="footer-links">
+        <li><a href="industries.html" class="footer-link">Industries</a></li>
+        <li><a href="coverage.html" class="footer-link">Coverage Map</a></li>
+        <li><a href="privacy.html" class="footer-link">Privacy Policy</a></li>
+        <li><a href="terms.html" class="footer-link">Terms</a></li>
+      </ul></div></nav>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copyright">© 2025 MTANDA — Ceres Holdings Limited. All rights reserved.</p>
+      <div class="footer-legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div>
+    </div>
+  </div>
+</footer>
+<button id="back-to-top" aria-label="Back to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+<script src="js/main.js" defer></script>
+<script src="js/pages.js" defer></script>
+</body>
+</html>

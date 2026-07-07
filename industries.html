@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Industries We Serve — MTANDA Uganda | FMCG, Agri, Pharma, Telecom & More</title>
+  <meta name="description" content="MTANDA serves 12 industries including FMCG, Agriculture, Pharmaceuticals, Telecommunications, Financial Services, Government, NGOs and more across Uganda and East Africa."/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://mtanda.co.ug/industries"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/pages.css"/>
+  <style>
+    .ind-card {
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-2xl);
+      padding: var(--space-8);
+      transition: all var(--transition-slow);
+      position: relative;
+      overflow: hidden;
+    }
+    [data-theme="dark"] .ind-card { background: var(--bg-secondary); border-color: rgba(255,255,255,0.06); }
+    .ind-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      transition: opacity var(--transition-base);
+      opacity: 0;
+    }
+    .ind-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-xl); }
+    .ind-card:hover::before { opacity: 1; }
+    .ind-icon { font-size: 3rem; margin-bottom: var(--space-4); }
+    .ind-title { font-family: var(--font-display); font-weight: 700; font-size: var(--text-xl); color: var(--text-primary); letter-spacing: -0.02em; margin-bottom: var(--space-3); }
+    .ind-desc { font-size: var(--text-sm); color: var(--text-secondary); line-height: 1.7; margin-bottom: var(--space-5); }
+    .ind-challenge { background: var(--bg-secondary); border-radius: var(--radius-md); padding: var(--space-4); margin-bottom: var(--space-4); }
+    [data-theme="dark"] .ind-challenge { background: var(--bg-tertiary); }
+    .ind-challenge-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin-bottom: var(--space-2); }
+    .ind-challenge p { font-size: var(--text-xs); color: var(--text-secondary); line-height: 1.6; }
+    .ind-services { display: flex; gap: 6px; flex-wrap: wrap; margin-top: var(--space-4); }
+    .ind-service-tag { padding: 3px 10px; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: var(--radius-full); font-size: 11px; color: var(--text-secondary); }
+    [data-theme="dark"] .ind-service-tag { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.08); }
+    .ind-stat { display: flex; flex-direction: column; }
+    .ind-stat-val { font-family: var(--font-display); font-weight: 700; font-size: 1.5rem; letter-spacing: -0.03em; }
+    .ind-stat-lbl { font-size: 11px; color: var(--text-muted); }
+  </style>
+</head>
+<body>
+<header>
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="MTANDA Home">
+        <div class="nav-logo-mark">M</div>
+        <div><span class="nav-logo-text">MTANDA</span><span class="nav-logo-sub">Ceres Holdings Limited</span></div>
+      </a>
+      <ul class="nav-menu" role="list">
+        <li><a href="index.html" class="nav-link" data-page="index.html">Home</a></li>
+        <li><a href="about.html" class="nav-link" data-page="about.html">About</a></li>
+        <li><a href="services.html" class="nav-link" data-page="services.html">Services</a></li>
+        <li><a href="industries.html" class="nav-link page-active" data-page="industries.html">Industries</a></li>
+        <li><a href="coverage.html" class="nav-link" data-page="coverage.html">Coverage</a></li>
+        <li><a href="partners.html" class="nav-link" data-page="partners.html">Partners</a></li>
+        <li><a href="blog.html" class="nav-link" data-page="blog.html">Insights</a></li>
+        <li><a href="careers.html" class="nav-link" data-page="careers.html">Careers</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode"><span data-theme-icon><i class="fa-solid fa-moon"></i></span></button>
+        <a href="contact.html" class="btn btn-primary btn-sm">Partner With Us <i class="fa-solid fa-arrow-right"></i></a>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open menu" aria-expanded="false">
+          <span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+</header>
+<div id="mobile-menu">
+  <a href="index.html" class="mobile-nav-link">Home</a>
+  <a href="about.html" class="mobile-nav-link">About MTANDA</a>
+  <a href="services.html" class="mobile-nav-link">Our Services</a>
+  <a href="industries.html" class="mobile-nav-link">Industries</a>
+  <a href="coverage.html" class="mobile-nav-link">Coverage</a>
+  <a href="partners.html" class="mobile-nav-link">Partners</a>
+  <a href="blog.html" class="mobile-nav-link">Insights</a>
+  <a href="careers.html" class="mobile-nav-link">Careers</a>
+  <a href="contact.html" class="mobile-nav-link">Contact</a>
+  <div style="margin-top:2rem;"><a href="contact.html" class="btn btn-primary w-full" style="justify-content:center;">Partner With Us</a></div>
+</div>
+<div id="scroll-progress" aria-hidden="true"></div>
+
+<main>
+<section class="page-hero">
+  <div class="page-hero-blob" style="width:500px;height:500px;background:radial-gradient(circle,rgba(16,185,129,0.2) 0%,transparent 70%);top:-100px;right:0;"></div>
+  <div class="container page-hero-inner">
+    <div class="page-hero-tag" data-aos="fade-up"><i class="fa-solid fa-industry"></i> Industries</div>
+    <h1 class="display-lg" data-aos="fade-up" data-aos-delay="80">12 Industries.<br><span style="color:var(--emerald-400);">One Distribution Partner.</span></h1>
+    <p data-aos="fade-up" data-aos-delay="160">MTANDA serves the full breadth of Uganda's economy from FMCG and agriculture to pharmaceuticals, telecom, financial services and government. Every industry has unique distribution needs. We understand them all.</p>
+    <div class="page-hero-breadcrumb" data-aos="fade-up" data-aos-delay="220"><a href="index.html">Home</a><span>/</span><span style="color:rgba(255,255,255,0.7);">Industries</span></div>
+  </div>
+</section>
+
+<!-- Quick stat strip -->
+<section style="padding:2.5rem 0;background:var(--bg-secondary);border-bottom:1px solid var(--border-color);">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:var(--space-4);" data-aos="fade-up">
+      <div style="text-align:center;"><div style="font-family:var(--font-display);font-weight:700;font-size:1.75rem;color:var(--primary);">12</div><div style="font-size:var(--text-xs);color:var(--text-muted);">Industries Served</div></div>
+      <div style="text-align:center;"><div style="font-family:var(--font-display);font-weight:700;font-size:1.75rem;color:var(--secondary);">200+</div><div style="font-size:var(--text-xs);color:var(--text-muted);">Active Partners</div></div>
+      <div style="text-align:center;"><div style="font-family:var(--font-display);font-weight:700;font-size:1.75rem;color:var(--accent);">120+</div><div style="font-size:var(--text-xs);color:var(--text-muted);">Brands Distributed</div></div>
+      <div style="text-align:center;"><div style="font-family:var(--font-display);font-weight:700;font-size:1.75rem;color:var(--primary);">10+</div><div style="font-size:var(--text-xs);color:var(--text-muted);">Years Experience</div></div>
+      <div style="text-align:center;"><div style="font-family:var(--font-display);font-weight:700;font-size:1.75rem;color:var(--secondary);">38%</div><div style="font-size:var(--text-xs);color:var(--text-muted);">Avg Partner Growth</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── INDUSTRIES GRID ── -->
+<section class="content-section">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <div class="section-tag"><i class="fa-solid fa-grid-2"></i> All Industries</div>
+      <h2 class="display-sm">Deep Sector Expertise, <span class="text-gradient">Across Uganda's Economy</span></h2>
+      <p>We are not generalists. We have built specialised competencies in each industry we serve from sector-specific regulations to unique channel dynamics and consumer behaviours.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:var(--space-6);">
+
+      <div class="ind-card" data-aos="fade-up" data-aos-delay="0" style="">
+        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(to right,#2563EB,#3B82F6);border-radius:var(--radius-2xl) var(--radius-2xl) 0 0;"></div>
+        <div class="ind-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+        <div class="ind-title">FMCG & Consumer Goods</div>
+        <div class="ind-desc">Uganda's largest and most competitive distribution sector. MTANDA handles distribution for some of the world's most recognisable consumer brands — food, beverages, personal care and household products — ensuring shelf presence in 50,000+ outlets nationwide.</div>
+        <div class="ind-challenge">
+          <div class="ind-challenge-label">Key Challenge We Solve</div>
+          <p>Achieving consistent national distribution without losing sell-through in secondary and tertiary markets. MTANDA's territory-based reps ensure that even rural district capitals receive weekly service, not just major urban centres.</p>
+        </div>
+        <div style="display:flex;gap:var(--space-6);margin-bottom:var(--space-4);">
+          <div class="ind-stat"><span class="ind-stat-val" style="color:var(--primary);">50+</span><span class="ind-stat-lbl">FMCG Brands</span></div>
+          <div class="ind-stat"><span class="ind-stat-val" style="color:var(--primary);">42%</span><span class="ind-stat-lbl">Avg Sales Growth</span></div>
+          <div class="ind-stat"><span class="ind-stat-val" style="color:var(--primary);">50K+</span><span class="ind-stat-lbl">Retail Outlets</span></div>
+        </div>
+        <div class="ind-services">
+          <span class="ind-service-tag">Trade Distribution</span><span class="ind-service-tag">Sales Execution</span><span class="ind-service-tag">Retail Activation</span><span class="ind-service-tag">Market Intelligence</span>
+        </div>
+      </div>
+
+      <div class="ind-card" data-aos="fade-up" data-aos-delay="60">
+        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(to right,#16A34A,#22C55E);border-radius:var(--radius-2xl) var(--radius-2xl) 0 0;"></div>
+        <div class="ind-icon"><i class="fa-solid fa-wheat-awn"></i></div>
+        <div class="ind-title">Agriculture & Agribusiness</div>
+        <div class="ind-desc">Uganda's agricultural sector feeds 30+ million people. MTANDA connects agro-input manufacturers with smallholder farmers through rural distribution networks, cooperatives and agro-dealers — ensuring farmers access genuine seeds, fertilisers and pesticides on time and at fair prices.</div>
+        <div class="ind-challenge">
+          <div class="ind-challenge-label">Key Challenge We Solve</div>
+          <p>Reaching smallholder farmers in remote areas with genuine agricultural inputs while fighting counterfeit products. MTANDA's rural penetration network and digital tracking ensure product authenticity throughout the supply chain.</p>
+        </div>
+        <div style="display:flex;gap:var(--space-6);margin-bottom:var(--space-4);">
+          <div class="ind-stat"><span class="ind-stat-val" style="color:#16A34A;">25+</span><span class="ind-stat-lbl">Agri Partners</span></div>
+          <div class="ind-stat"><span class="ind-stat-val" style="color:#16A34A;">800+</span><span class="ind-stat-lbl">Agro-dealers</span></div>
+          <div class="ind-stat"><span class="ind-stat-val" style="color:#16A34A;">50K+</span><span class="ind-stat-lbl">Farmers Reached</span></div>
+        </div>
+        <div class="ind-services">
+          <span class="ind-service-tag">Rural Distribution</span><span class="ind-service-tag">Cold Chain</span><span class="ind-service-tag">Field Marketing</span><span class="ind-service-tag">Cooperative Networks</span>
+        </div>
+      </div>
+
+      <div class="ind-card" data-aos="fade-up" data-aos-delay="120">
+        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(to right,#DC2626,#EF4444);border-radius:var(--radius-2xl) var(--radius-2xl) 0 0;"></div>
+        <div class="ind-icon"><i class="fa-solid fa-pills"></i></div>
+        <div class="ind-title">Pharmaceuticals & Healthcare</div>
+        <div class="ind-desc">From prescription medicines to OTC healthcare products, MTANDA ensures Uganda's healthcare supply chain meets international standards. Our WHO-approved cold chain infrastructure and licensed medical distribution team serve hospitals, clinics and pharmacies across all regions.</div>
+        <div class="ind-challenge">
+          <div class="ind-challenge-label">Key Challenge We Solve</div>
+          <p>Maintaining unbroken cold chains and product integrity for temperature-sensitive medicines in Uganda's challenging climate, while ensuring licensed compliance in all healthcare distribution activities.</p>
+        </div>
+        <div style="display:flex;gap:var(--space-6);margin-bottom:var(--space-4);">
+          <div class="ind-stat"><span class="ind-stat-val" style="color:#DC2626;">15+</span><span class="ind-stat-lbl">Pharma Partners</span></div>
+          <div class="ind-stat"><span class="ind-stat-val" style="color:#DC2626;">2,000+</span><span class="ind-stat-lbl">Healthcare Outlets</span></div>
+          <div class="ind-stat"><span class="ind-stat-val" style="color:#DC2626;">100%</span><span class="ind-stat-lbl">Cold Chain</span></div>
+        </div>
+        <div class="ind-services">
+          <span class="ind-service-tag">Cold Chain Logistics</span><span class="ind-service-tag">Regulatory Compliance</span><span class="ind-service-tag">Hospital Supply</span>
+        </div>
+      </div>
+
+      <div class="ind-card" data-aos="fade-up" data-aos-delay="0">
+        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(to right,#7C3AED,#A78BFA);border-radius:var(--radius-2xl) var(--radius-2xl) 0 0;"></div>
+        <div class="ind-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+        <div class="ind-title">Telecommunications</div>
+        <div class="ind-desc">MTANDA is the last-mile distribution partner for Uganda's leading telecoms — managing airtime, data bundles, mobile devices and SIM card distribution across 50,000+ outlets. Our field teams ensure SIM registration compliance and product availability in every corner of the country.</div>
+        <div class="ind-challenge">
+          <div class="ind-challenge-label">Key Challenge We Solve</div>
+          <p>Ensuring consistent airtime and data availability in rural Uganda where digital payment infrastructure is limited. MTANDA bridges the gap with physical distribution complemented by digital ordering systems for rural agents.</p>
+        </div>
+        <div style="display:flex;gap:var(--space-6);margin-bottom:var(--space-4);">
+          <div class="ind-stat"><span class="ind-stat-val" style="color:#7C3AED;">3</div><span class="ind-stat-lbl">Telecom Partners</span></div>
+          <div class="ind-stat"><span class="ind-stat-val" style="color:#7C3AED;">50K+</span><span class="ind-stat-lbl">Agent Outlets</span></div>
+          <div class="ind-stat"><span class="ind-stat-val" style="color:#7C3AED;">99%</span><span class="ind-stat-lbl">Network Uptime</span></div>
+        </div>
+        <div class="ind-services">
+          <span class="ind-service-tag">SIM Distribution</span><span class="ind-service-tag">Airtime Logistics</span><span class="ind-service-tag">Agent Management</span>
+        </div>
+      </div>
+
+      <div class="ind-card" data-aos="fade-up" data-aos-delay="60">
+        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(to right,#D97706,#F59E0B);border-radius:var(--radius-2xl) var(--radius-2xl) 0 0;"></div>
+        <div class="ind-icon"><i class="fa-solid fa-building-columns"></i></div>
+        <div class="ind-title">Financial Services & Fintech</div>
+        <div class="ind-desc">Enabling financial inclusion in Uganda's underbanked communities. MTANDA distributes financial products — from agency banking kits to mobile money agent hardware — and provides the trusted last-mile network that financial institutions need to onboard rural customers at scale.</div>
+        <div class="ind-challenge">
+          <div class="ind-challenge-label">Key Challenge We Solve</div>
+          <p>Reaching Uganda's 15M+ unbanked adults in rural areas with reliable, trusted financial services distribution including agent recruitment, onboarding, equipment delivery and ongoing support.</p>
+        </div>
+        <div style="display:flex;gap:var(--space-6);margin-bottom:var(--space-4);">
+          <div class="ind-stat"><span class="ind-stat-val" style="color:#D97706;">8+</span><span class="ind-stat-lbl">Fintech Partners</span></div>
+          <div class="ind-stat"><span class="ind-stat-val" style="color:#D97706;">5,000+</span><span class="ind-stat-lbl">Agents Supported</span></div>
+          <div class="ind-stat"><span class="ind-stat-val" style="color:#D97706;">5M+</span><span class="ind-stat-lbl">Consumers Reached</span></div>
+        </div>
+        <div class="ind-services">
+          <span class="ind-service-tag">Agent Banking</span><span class="ind-service-tag">Equipment Logistics</span><span class="ind-service-tag">Rural Onboarding</span>
+        </div>
+      </div>
+
+      <div class="ind-card" data-aos="fade-up" data-aos-delay="120">
+        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(to right,#0891B2,#22D3EE);border-radius:var(--radius-2xl) var(--radius-2xl) 0 0;"></div>
+        <div class="ind-icon">🏛️</div>
+        <div class="ind-title">Government & Public Sector</div>
+        <div class="ind-desc">MTANDA has experience managing large-scale government commodity distribution — from school feeding programmes and health commodities to emergency relief supplies. Our compliance standards, reporting capabilities and national reach make us a preferred government distribution partner.</div>
+        <div class="ind-challenge">
+          <div class="ind-challenge-label">Key Challenge We Solve</div>
+          <p>Delivering government commodities to remote beneficiaries with verifiable proof of delivery, beneficiary tracking and real-time reporting to oversight authorities eliminating leakage and improving accountability.</p>
+        </div>
+        <div class="ind-services">
+          <span class="ind-service-tag">Commodity Distribution</span><span class="ind-service-tag">Digital POD</span><span class="ind-service-tag">Compliance Reporting</span>
+        </div>
+      </div>
+
+      <div class="ind-card" data-aos="fade-up" data-aos-delay="0">
+        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(to right,#DB2777,#F472B6);border-radius:var(--radius-2xl) var(--radius-2xl) 0 0;"></div>
+        <div class="ind-icon"><i class="fa-solid fa-globe"></i></div>
+        <div class="ind-title">NGOs & Humanitarian Organisations</div>
+        <div class="ind-desc">Trusted by international NGOs and UN agencies for humanitarian commodity distribution in Uganda — including food aid, WASH supplies, shelter materials and health commodities. Our data-driven distribution ensures aid reaches intended beneficiaries with full accountability.</div>
+        <div class="ind-challenge">
+          <div class="ind-challenge-label">Key Challenge We Solve</div>
+          <p>Last-mile delivery to refugee settlements, remote communities and conflict-affected areas including Karamoja and northern Uganda with real-time tracking and full beneficiary verification reporting.</p>
+        </div>
+        <div style="display:flex;gap:var(--space-6);margin-bottom:var(--space-4);">
+          <div class="ind-stat"><span class="ind-stat-val" style="color:#DB2777;">20+</span><span class="ind-stat-lbl">NGO Partners</span></div>
+          <div class="ind-stat"><span class="ind-stat-val" style="color:#DB2777;">500K+</span><span class="ind-stat-lbl">Beneficiaries</span></div>
+        </div>
+        <div class="ind-services">
+          <span class="ind-service-tag">Humanitarian Logistics</span><span class="ind-service-tag">Beneficiary Verification</span><span class="ind-service-tag">Remote Access</span>
+        </div>
+      </div>
+
+      <div class="ind-card" data-aos="fade-up" data-aos-delay="60">
+        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(to right,#059669,#34D399);border-radius:var(--radius-2xl) var(--radius-2xl) 0 0;"></div>
+        <div class="ind-icon">🏗️</div>
+        <div class="ind-title">Building Materials & Construction</div>
+        <div class="ind-desc">Distribution of cement, steel, tiles, paint and construction chemicals through a network of hardware retailers, contractors and project sites across Uganda. Our heavy-load logistics fleet manages bulk deliveries to construction projects in even the most challenging terrains.</div>
+        <div class="ind-challenge">
+          <div class="ind-challenge-label">Key Challenge We Solve</div>
+          <p>Coordinating bulk, time-sensitive deliveries to active construction sites while managing weight restrictions, road conditions and complex project delivery schedules.</p>
+        </div>
+        <div class="ind-services">
+          <span class="ind-service-tag">Bulk Logistics</span><span class="ind-service-tag">Project Delivery</span><span class="ind-service-tag">Hardware Retail</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CROSS-INDUSTRY CAPABILITIES ── -->
+<section class="content-section content-section-alt">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <div class="section-tag"><i class="fa-solid fa-network-wired"></i> Cross-Sector Strengths</div>
+      <h2 class="display-sm">Capabilities That Work <span class="text-gradient">Across Every Industry</span></h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-6);" data-aos="fade-up" data-aos-delay="80">
+      <div class="info-card">
+        <div class="info-card-icon">🗺️</div>
+        <h3>135-District National Reach</h3>
+        <p>No other distributor in Uganda can offer genuine coverage of all 135 districts from Kampala's urban density to Karamoja's remote pastoralist communities. One partner, whole country.</p>
+      </div>
+      <div class="info-card">
+        <div class="info-card-icon"><i class="fa-solid fa-chart-bar"></i></div>
+        <h3>Real-Time Data & Reporting</h3>
+        <p>Every industry partner receives live dashboards, digital proof of delivery and weekly intelligence reports. Governments need accountability, NGOs need beneficiary data, FMCG partners need sell-through we deliver all of it.</p>
+      </div>
+      <div class="info-card">
+        <div class="info-card-icon">⚖️</div>
+        <h3>Compliance & Regulatory</h3>
+        <p>From pharmaceutical distribution licenses to food safety standards and customs compliance, MTANDA maintains all required certifications and ensures every distribution activity meets Uganda's regulatory requirements.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA ── -->
+<section style="padding:clamp(5rem,8vw,8rem) 0;background:var(--gradient-dark);">
+  <div class="container" style="text-align:center;">
+    <h2 class="display-md" style="color:white;margin-bottom:var(--space-5);" data-aos="fade-up">Your Industry.<br><span style="color:var(--emerald-400);">Our Distribution Expertise.</span></h2>
+    <p style="color:rgba(255,255,255,0.65);font-size:var(--text-xl);max-width:560px;margin:0 auto var(--space-10);" data-aos="fade-up" data-aos-delay="80">Whatever your sector, we have the experience, infrastructure and team to build your distribution success in Uganda.</p>
+    <div style="display:flex;gap:var(--space-4);justify-content:center;flex-wrap:wrap;" data-aos="fade-up" data-aos-delay="160">
+      <a href="contact.html" class="btn btn-primary btn-lg">Discuss Your Sector <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="services.html" class="btn btn-secondary btn-lg">View Our Services</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer id="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="img/Mtanda.png" alt="MTANDA Logo" style="max-height: 180px; margin-bottom: 1rem;" />
+        <p>Building markets, moving products and growing brands across Uganda and East Africa.</p>
+        <div class="footer-social">
+          <a href="#" class="footer-social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" class="footer-social-link" aria-label="Twitter/X"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="footer-social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://wa.me/256700000000" class="footer-social-link" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <nav aria-label="Company links"><div class="footer-col"><h4>Company</h4><ul class="footer-links">
+        <li><a href="about.html" class="footer-link">About MTANDA</a></li>
+        <li><a href="blog.html" class="footer-link">News & Insights</a></li>
+        <li><a href="careers.html" class="footer-link">Careers</a></li>
+        <li><a href="contact.html" class="footer-link">Contact</a></li>
+      </ul></div></nav>
+      <nav aria-label="Services links"><div class="footer-col"><h4>Services</h4><ul class="footer-links">
+        <li><a href="services.html" class="footer-link">Trade Distribution</a></li>
+        <li><a href="services.html" class="footer-link">Market Development</a></li>
+        <li><a href="services.html" class="footer-link">Logistics</a></li>
+        <li><a href="services.html" class="footer-link">Warehousing</a></li>
+      </ul></div></nav>
+      <nav aria-label="Other links"><div class="footer-col"><h4>Explore</h4><ul class="footer-links">
+        <li><a href="coverage.html" class="footer-link">Coverage Map</a></li>
+        <li><a href="partners.html" class="footer-link">Partners</a></li>
+        <li><a href="privacy.html" class="footer-link">Privacy Policy</a></li>
+        <li><a href="terms.html" class="footer-link">Terms</a></li>
+      </ul></div></nav>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copyright">© 2025 MTANDA — Ceres Holdings Limited. All rights reserved.</p>
+      <div class="footer-legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/256700000000" id="whatsapp-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+<button id="back-to-top" aria-label="Back to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+<script src="js/main.js" defer></script>
+<script src="js/pages.js" defer></script>
+<style>
+@media(max-width:768px) { [style*="grid-template-columns:repeat(2,1fr)"] { grid-template-columns:1fr!important; } [style*="grid-template-columns:repeat(5,1fr)"] { grid-template-columns:repeat(2,1fr)!important; } }
+</style>
+</body>
+</html>
