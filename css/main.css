@@ -2283,7 +2283,7 @@ select.form-control { cursor: pointer; }
   .contact-inner { grid-template-columns: 1fr; }
   .news-grid { grid-template-columns: repeat(2, 1fr); }
   .coverage-inner { grid-template-columns: 1fr; }
-  .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: var(--space-8); }
+  .grid-3 {grid-template-columns: 1fr; }
 }
 
 @media (max-width: 768px) {
